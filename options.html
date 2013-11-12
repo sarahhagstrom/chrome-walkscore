@@ -54,20 +54,75 @@
             margin-left: 2px;
             text-shadow: 0 1px 1px rgba(0,0,0,.1);
         }
+        .textLabel {
+            text-shadow: 0 1px 1px rgba(0,0,0,.1);
+        }
+        input[type="text"] {
+            width: 300px;
+            height: 18px;
+            padding-left: 5px;
+            padding-bottom: 2px;
+            margin-left: 4px;
+            border: 1px solid #CDCFCE;
+            border-radius: 4px;
+        }
+        .helpText {
+            font-size: 0.8em;
+            line-height: 8px;
+            color: #5b5c5b;
+        }
+        .helpText .highlight {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #8e0000;
+        }
+        .helpText .searchTerm {
+            /*font-family: "Courier" monospace;*/
+            font-style: italic;
+            color: #162a8e;
+        }
     </style>
 </head>
 <body>
     <div class="optionsBox">
         <div style="text-align:left">
-            <input type="radio" name="openIn" value="smallpopup">
+            <input type="radio" name="openIn" value="smallpopup"/>
             <span class="radioText">Open small informational popup with hyperlink to full WalkScore page</span>
             <br>
-            <input type="radio" name="openIn" value="fullpopup">
+            <input type="radio" name="openIn" value="fullpopup"/>
             <span class="radioText">Open full WalkScore page in a new window</span>
             <br>
-            <input type="radio" name="openIn" value="fulltab">
+            <input type="radio" name="openIn" value="fulltab"/>
             <span class="radioText">Open full WalkScore page in a new tab</span>
             <br>
+            <br>
+            <span class="textLabel">Search City (optional)</span>
+            <input type="text" id="searchCity" name="searchCity" value=""
+                   placeholder="Example: Seattle" maxlength="30"/>
+            <br>
+            <div>
+                <span class="helpText">
+                    <ul style="line-height:14px">
+                        <li>
+                            <span class="highlight">If you will be searching in multiple cities, leave this blank</span>.
+                        </li>
+                        <li>
+                            WalkScore's engine deals very well with incomplete addresses and neighborhood names, often guessing correctly.
+                            However, sometimes a search string is truly ambiguous, like 'Beacon Hill',
+                            for example, which could be in Boston or Seattle.
+                            Entering a search city will help in these situations.
+                            This extension will search for each word entered here and append it to the end of the search if it does not exist already in the selected text.
+                            For this reason, <span class="highlight">an unqualified city name will usually work best</span>
+                            (so enter <span class="searchTerm">Melbourne</span> rather than <span class="searchTerm">Melbourne, Victoria, Australia</span>).
+                        </li>
+                        <li>
+                            <span class="highlight">For multiple-word tokens, use quotes</span>.
+                            (So enter <span class="searchTerm">"New York"</span> rather than <span class="searchTerm">New York</span>,
+                            and <span class="searchTerm">Sydney "New South Wales"</span> rather than <span class="searchTerm">Sydney New South Wales</span>)
+                        </li>
+                    </ul>
+                </span>
+            </div>
         </div>
         <button id="save">Save</button>
     </div>

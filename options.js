@@ -8,6 +8,7 @@ var chromeWSOptions = chromeWSOptions || {};
     obj.saveOptions = function () {
         var radios = document.getElementsByName("openIn"),
             saveButton = document.getElementById("save"),
+            searchCity = document.getElementById("searchCity"),
             restorePadding,
             restoreText,
             i;
@@ -16,6 +17,10 @@ var chromeWSOptions = chromeWSOptions || {};
             if (radios[i].checked === true) {
                 localStorage.WalkScoreOpenIn = radios[i].value;
             }
+        }
+
+        if (searchCity) {
+            localStorage.WalkScoreSearchCity = searchCity.value;
         }
 
         // Change button text briefly to let user know the selection was saved.
@@ -36,15 +41,12 @@ var chromeWSOptions = chromeWSOptions || {};
     obj.restoreOptions = function () {
         var openIn = localStorage.WalkScoreOpenIn,
             radios = document.getElementsByName("openIn"),
+            searchCity = localStorage.WalkScoreSearchCity || "",
+            searchCityInput = document.getElementById("searchCity"),
             i;
 
-        // select default
+        // first radio button is the default
         radios[0].checked = true;
-
-        // If nothing's been saved yet, just go with the default and break out
-        if (!openIn) {
-            return;
-        }
 
         for (i = 0; i < radios.length; i++) {
             if (radios[i].value === openIn) {
@@ -52,8 +54,17 @@ var chromeWSOptions = chromeWSOptions || {};
                 break;
             }
         }
+
+        searchCityInput.value = searchCity;
     };
 }(chromeWSOptions));
 
 document.addEventListener('DOMContentLoaded', chromeWSOptions.restoreOptions());
+document.addEventListener('keydown', function(event) {
+    if (event && event.keyCode === 13) {
+        // Hitting enter is the same as clicking on the
+        // add button
+        chromeWSOptions.saveOptions();
+    }
+});
 document.querySelector('#save').addEventListener('click', chromeWSOptions.saveOptions);
