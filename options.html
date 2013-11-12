@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Right-Click WalkScore Options</title>
+    <style>
+        body {
+            background-image: url('img/options_background_boston.png');
+            background-position: 50% 0%;
+            font-size: 1.05em;
+            line-height: 26px;
+            height: 100%;
+        }
+        div.optionsBox {
+            width: 530px;
+            padding: 32px;
+            margin: 50px auto 10px auto;
+            background: rgba(255,255,255,.75);
+            box-shadow: 0 0 20px rgba(0,0,0,.2);
+            border-radius: 5px;
+            text-align: center;
+        }
+        div.footer {
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            width: 288px;
+            height: 24px;
+            font-size: 0.7em;
+            padding: 2px 10px;
+            border-radius: 5px;
+            background: rgba(255,255,255,.75);
+            box-shadow: 0 0 20px rgba(0,0,0,.2);
+            text-shadow: 0 1px 1px rgba(0,0,0,.1);
+            text-align: right;
+        }
+        div.footer a {
+            color: #0ea013;
+            text-decoration: none;
+        }
+        button {
+            color: #fff;
+            border: 1px solid #6b0606;
+            border-radius: 5px;
+            padding: 5px 55px;
+            margin-top: 20px;
+            font-size: 1em;
+            text-shadow: 0 1px 1px rgba(0,0,0,.3);
+            box-shadow: 0 0 5px rgba(0,0,0,.1);
+            background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0,#a03434),color-stop(0.73,#fb3e3e));
+        }
+        .radioText {
+            position: relative;
+            top: 2px;
+            margin-left: 2px;
+            text-shadow: 0 1px 1px rgba(0,0,0,.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="optionsBox">
+        <div style="text-align:left">
+            <input type="radio" name="openIn" value="smallpopup">
+            <span class="radioText">Open small informational popup with hyperlink to full WalkScore page</span>
+            <br>
+            <input type="radio" name="openIn" value="fullpopup">
+            <span class="radioText">Open full WalkScore page in a new window</span>
+            <br>
+            <input type="radio" name="openIn" value="fulltab">
+            <span class="radioText">Open full WalkScore page in a new tab</span>
+            <br>
+        </div>
+        <button id="save">Save</button>
+    </div>
+    <div class="footer">
+        Background image is the WalkScore overlay of <a href="http://www.walkscore.com/MA/Boston" target="_blank">Boston, MA</a>
+    </div>
+</body>
+<script src="options.js"></script>
+</html>

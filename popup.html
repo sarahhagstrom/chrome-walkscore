@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<head>
+    <script src="popup.js"></script>
+    <style>
+        table {
+            padding: 0 5px;
+            border: 0;
+            margin: 0;
+        }
+        #outerDiv {
+            margin-top:20px;
+            display: none;
+        }
+        #innerDiv {
+            width: 320px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        #addressHeader {
+            color: #02456c;
+            display: block;
+            font-weight: bold;
+            text-align: center;
+        }
+        #errorMessage {
+            color: #a01919;
+            font-weight: bold;
+            font-size: 0.9em;
+            text-align: center;
+            display: none;
+        }
+        #spinner {
+            margin: 220px auto 0 auto;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="outerDiv">
+        <span id="addressHeader"></span>
+        <div id="innerDiv">
+            <a id="walkScoreLink" href="">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td style="background-image:url('img/notfoundwalk.png')"><img id="walkScoreBadge" src="pixel.png" style="width:100px"/></td>
+                            <td style="background-image:url('img/notfoundtransit.png')"><img id="transitScoreBadge" src="pixel.png" style="width:100px"/></td>
+                            <td style="background-image:url('img/notfoundbike.png')"><img id="bikeScoreBadge" src="pixel.png" style="width:100px"/></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </a>
+        </div>
+        <div id="errorMessage">
+            The selected text was not recognized as a valid address
+        </div>
+        <img id="spinner" src="img/spinner.gif"/>
+    </div>
+</body>
+
