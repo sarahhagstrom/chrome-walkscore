@@ -46,8 +46,7 @@ var chromeWalkScore = chromeWalkScore || {};
 
         var params = [],
             start = 0,
-            index = text.indexOf('"'),
-            p;
+            index = text.indexOf('"');
 
         while (index !== -1 && index < text.length - 1) {
             // if there were params before the quoted parameter

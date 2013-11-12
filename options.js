@@ -61,7 +61,8 @@ var chromeWSOptions = chromeWSOptions || {};
 }(chromeWSOptions));
 
 document.addEventListener('DOMContentLoaded', chromeWSOptions.restoreOptions());
-document.addEventListener('keydown', function(event) {
+document.addEventListener('keydown', function (event) {
+    "use strict";
     if (event && event.keyCode === 13) {
         // Hitting enter is the same as clicking on the
         // add button
