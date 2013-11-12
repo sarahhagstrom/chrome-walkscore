@@ -20,7 +20,8 @@ var chromeWSOptions = chromeWSOptions || {};
         }
 
         if (searchCity) {
-            localStorage.WalkScoreSearchCity = searchCity.value;
+            // only allow search city value of 30 characters or less
+            localStorage.WalkScoreSearchCity = searchCity.value.slice(0, 30);
         }
 
         // Change button text briefly to let user know the selection was saved.
