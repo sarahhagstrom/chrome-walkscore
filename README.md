@@ -46,9 +46,7 @@ The second two options allow you to configure the extension to open the full Wal
 <b>If you will be searching in multiple cities, do not set this option.</b>
 
 <b>If you are searching in only one city, setting this option increases functionality.</b><br>
-Configuring a Search City makes sure all searches are qualified with that city's name.
-
-This is helpful when searching for a room share on Craigslist, for example, as addresses are more often than not incomplete:
+Configuring a Search City makes sure all searches are qualified with that city's name. This is helpful when searching for a room share on Craigslist, for example, as addresses are more often than not incomplete:
 
 ![Right-Click WalkScore options screenshot](https://raw.github.com/sarahhagstrom/chrome-walkscore/master/docs/CLPartialrightclick.png)
 
