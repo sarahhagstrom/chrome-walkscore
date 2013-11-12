@@ -20,7 +20,7 @@ As illustrated above, the first option opens a small popup window with just the 
 
 You may also configure the extension to open the full WalkScore results page in a new tab or a new window, skipping the summary popup window altogether.
 
-(The background of the options dialog is the WalkScore map overlay for the city of Boston, MA.)
+(The background of the options dialog is the WalkScore map overlay for the city of <a href="http://www.walkscore.com/MA/Boston" target="_blank">Boston, MA</a>.)
 
 ## Flexible input
 
