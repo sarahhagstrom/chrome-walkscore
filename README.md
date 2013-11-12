@@ -16,7 +16,7 @@ From the options dialog, you can configure the extension to deliver the score in
 
 ![Right-Click WalkScore options screenshot](https://raw.github.com/sarahhagstrom/chrome-walkscore/master/docs/options.png)
 
-As illustrated above, the first option opens a small popup window with just the walk, transit, and bike score badges of an address. When clicked, this window expands to show the detail view in a larger window.
+As illustrated above, the first option opens a small popup window with just the walk, transit, and bike score badges of an address. When clicked, this window expands to show the detail view in a larger window. This option is the default.
 
 You may also configure the extension to open the full WalkScore results page in a new tab or a new window, skipping the summary popup window altogether.
 
@@ -28,7 +28,7 @@ You may, for example, get the WalkScore for a zip code, a city, or a neighborhoo
 
 ![Right-Click WalkScore Craigslist screenshot](https://raw.github.com/sarahhagstrom/chrome-walkscore/master/docs/CLrightclick.png)
 
-![Right-Click WalkScore Craigslist screenshot](https://raw.github.com/sarahhagstrom/chrome-walkscore/master/docs/CLrightresult.png)
+![Right-Click WalkScore Craigslist screenshot](https://raw.github.com/sarahhagstrom/chrome-walkscore/master/docs/CLresult.png)
 
-![Right-Click WalkScore Craigslist screenshot](https://raw.github.com/sarahhagstrom/chrome-walkscore/master/docs/CLrightresultexpand.png)
+![Right-Click WalkScore Craigslist screenshot](https://raw.github.com/sarahhagstrom/chrome-walkscore/master/docs/CLresultexpand.png)
 
