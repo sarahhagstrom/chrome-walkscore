@@ -1,4 +1,4 @@
-With the Right-Click Walk Score Chrome extension, you can get the Walk Score of any address just by selecting it, right-clicking (or ctrl-clicking), and choosing the <b>Get Walk Score for this address</b> context menu item provided.
+With the Right-Click Walk Score Chrome extension (available <a href="https://chrome.google.com/webstore/detail/right-click-walk-score/glgonbiicgapabdbfooolnobnjmjleim" target="_blank">on the Chrome Web Store</a>), you can get the Walk Score of any address just by selecting it, right-clicking (or ctrl-clicking), and choosing the <b>Get Walk Score for this address</b> context menu item provided.
 
 ![Right-Click Walk Score Zillow screenshot](https://raw.github.com/sarahhagstrom/chrome-walkscore/master/docs/Zillowrightclick.png)
 
