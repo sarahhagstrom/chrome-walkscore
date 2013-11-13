@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
-    "name": "Right-Click WalkScore",
-    "description": "Display the WalkScore of any address",
+    "name": "Right-Click Walk Score",
+    "description": "Display the Walk Score of any address",
     "homepage_url": "https://github.com/sarahhagstrom/chrome-walkscore/blob/master/README.md",
     "icons": {
         "16": "img/icon16.png",

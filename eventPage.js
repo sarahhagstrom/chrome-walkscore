@@ -101,7 +101,7 @@ var chromeWalkScore = chromeWalkScore || {};
 
             obj.slugify(obj.appendSearchCity(info.selectionText));
 
-            // Read in the user's preference for how the WalkScore should
+            // Read in the user's preference for how the Walk Score should
             // be opened.
             var openIn = localStorage.WalkScoreOpenIn;
 
@@ -139,12 +139,12 @@ chrome.contextMenus.onClicked.addListener(chromeWalkScore.onClickHandler);
 chrome.runtime.onInstalled.addListener(function () {
     "use strict";
     chrome.contextMenus.create({
-        "title": "Get WalkScore for this address",
+        "title": "Get Walk Score for this address",
         "contexts": ["selection"],
         "id": "WalkScoreSelection"
     }, function () {
         if (chrome.extension.lastError) {
-            window.console.log("An error occurred during WalkScore context menu creation: " + chrome.extension.lastError.message);
+            window.console.log("An error occurred during Walk Score context menu creation: " + chrome.extension.lastError.message);
         }
     });
 });

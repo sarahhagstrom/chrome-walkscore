@@ -31,7 +31,7 @@ var chromeWSPopup = chromeWSPopup || {};
 
             outerDiv.style.display = "block";
 
-            // Wait to enable the link until we're sure the WalkScore will load
+            // Wait to enable the link until we're sure the Walk Score will load
             link.onclick = function () { return false; };
             link.style.cursor = 'default';
 
@@ -47,14 +47,14 @@ var chromeWSPopup = chromeWSPopup || {};
 
             walkImg.addEventListener('load', function () {
                 if (walkImg.src.indexOf('pixel.png') === -1) {
-                    // When WalkScore image is successfully loaded,
-                    // enable the WalkScore link
+                    // When Walk Score image is successfully loaded,
+                    // enable the Walk Score link
                     link.href = backgroundPage.chromeWalkScore.walkScoreURL;
                     link.style.cursor = 'pointer';
                     link.onclick = null;
 
-                    // When the WalkScore page link is clicked, resize the window and
-                    // load the full WalkScore page.
+                    // When the Walk Score page link is clicked, resize the window and
+                    // load the full Walk Score page.
                     link.addEventListener('click', function () {
                         window.resizeTo(800, 800);
                         // While the page is loading, display the spinner
